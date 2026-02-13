@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-family: "Orbitron", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#navbar {
+  width: 100%;
+  height: 4vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  background: #e0e5ec;
+  color: black;
+  border-radius: 20px;
+  box-shadow: 8px 8px 15px #a3b1c6, -8px -8px 15px #ffffff;
+}
+#navbar .top1 {
+  border-radius: 50px;
+  width: 20vw;
+  height: 4vh;
+}
+
+main {
+  font-family: "Orbitron", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+main .de {
+  background-image: url("https://cdn.pixabay.com/animation/2023/02/24/15/52/15-52-12-954_512.gif");
+  background-size: cover;
+  background-position: center;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+}
+main .de h1, main .de h3 {
+  color: transparent;
+}
+main #view1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url(https://plus.unsplash.com/premium_photo-1764687605296-fcb75d3101c2?q=80&w=1332&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view1 .block2 {
+  width: 100%;
+  display: grid;
+  height: 90%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "fig1 fig2" "fig1 fig3";
+}
+main #view1 .block2 .fig1 {
+  background-image: url(https://images.unsplash.com/photo-1767167871006-633c1acd0ab1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  grid-area: fig1;
+}
+main #view1 .block2 .fig2 {
+  background-image: url(https://plus.unsplash.com/premium_photo-1694475141514-6c2ee0d93378?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  grid-area: fig2;
+}
+main #view1 .block2 .fig3 {
+  background-image: url(https://images.unsplash.com/photo-1592364395653-83e648b20cc2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  grid-area: fig3;
+}
+main #view1 button {
+  padding: 12px 30px;
+  color: white;
+  background: #011c40;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 30%;
+}
+main #view2 {
+  display: flex;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+main #view2 .card1 {
+  background-image: url(https://images.unsplash.com/photo-1710505736768-5eb506647c97?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  position: relative;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  position: relative;
+  flex: 0 0 50vw;
+  margin: 5px;
+  overflow: hidden;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view2 .card1:hover .uppercard {
+  transform: translateY(0);
+}
+main #view2 .card1 .innercard {
+  color: bisque;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  transform: translateY(100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: 0;
+}
+main #view2 .card1:hover .innercard {
+  transform: translateY(0);
+}
+main #view2 .card2 {
+  position: relative;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  position: relative;
+  flex: 0 0 50vw;
+  margin: 5px;
+  overflow: hidden;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view2 .card2:hover .uppercard {
+  transform: translateY(0);
+}
+main #view2 .card2 .innercard {
+  color: bisque;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  transform: translateY(100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: 0;
+}
+main #view2 .card2:hover .innercard {
+  transform: translateY(0);
+}
+main #view2 .card2 {
+  background-image: url(https://images.unsplash.com/photo-1511527661048-7fe73d85e9a4?q=80&w=765&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+main #view2 .card3 {
+  position: relative;
+  width: 50vw;
+  aspect-ratio: 1/1;
+  position: relative;
+  flex: 0 0 50vw;
+  margin: 5px;
+  overflow: hidden;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view2 .card3:hover .uppercard {
+  transform: translateY(0);
+}
+main #view2 .card3 .innercard {
+  color: bisque;
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  text-align: center;
+  transform: translateY(100%);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.2));
+  transition: transform 0.6s cubic-bezier(0.19, 1, 0.22, 1);
+  bottom: 0;
+}
+main #view2 .card3:hover .innercard {
+  transform: translateY(0);
+}
+main #view2 .card3 {
+  background-image: url(https://images.unsplash.com/photo-1701421016474-09b19faa9f77?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+main #view3 {
+  width: 50vw;
+  margin: 0 auto;
+  padding-bottom: 30vh;
+  display: grid;
+  gap: 5px;
+}
+main #view3 .slide1 {
+  position: sticky;
+  top: 0;
+  width: 50vw;
+  height: 60vh;
+  background-image: url(https://images.unsplash.com/photo-1528458909336-e7a0adfed0a5?q=80&w=1048&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view3 .img1 {
+  position: relative;
+  background-clip: content-box;
+  background-image: url(https://lp-cms-production.imgix.net/2025-02/Shijo11.jpg?auto=format,compress&q=72&fit=crop&w=1200);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 50vw;
+  height: 40vh;
+  padding: 15px;
+}
+main #view3 .img2 {
+  position: relative;
+  background-clip: content-box;
+  background-image: url(https://lp-cms-production.imgix.net/2026-02/FernandoFarfanImpressionLonelyPlanet40.jpg?auto=format,compress&q=72&w=1440&h=810&fit=crop);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 50vw;
+  height: 40vh;
+  padding: 15px;
+}
+main #view3 .img3 {
+  position: relative;
+  background-clip: content-box;
+  background-image: url(https://lp-cms-production.imgix.net/2026-02/shutterstock2389404385.jpg?auto=format,compress&q=72&fit=crop&w=1200);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  width: 50vw;
+  height: 40vh;
+  padding: 15px;
+}
+main #view3 .one {
+  z-index: 1;
+}
+main #view3 .two {
+  z-index: 2;
+}
+main #view3 .three {
+  z-index: 3;
+}
+main #view4 {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1578769116044-808f9f2bd601?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+}
+main #view4 #email {
+  padding: 12px 30px;
+  color: white;
+  background: rgba(229, 179, 70, 0.1294117647);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  backdrop-filter: blur(8px);
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: 30%;
+}
+
+@media (min-width: 700px) {
+  main #view1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  main #view1 .block1 {
+    width: 20vw;
+  }
+  main #view1 .block1 h3 {
+    margin-top: 50%;
+  }
+  main #view1 .block2 {
+    width: 50vw;
+    position: absolute;
+    right: 0;
+  }
+  main #view2 .card1,
+  main #view2 .card2,
+  main #view2 .card3 {
+    flex: 0 0 40vw;
+  }
+}
